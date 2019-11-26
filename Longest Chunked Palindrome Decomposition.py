@@ -9,13 +9,11 @@ while (j > i):
         count +=2
         word1 = text[i+1:i+2]
         word2 = text[j-1:j]
-        j-=1
-        i+=1
     else:
         word1 += text[i+1]
         word2 = text[j-1] + word2
-        j-=1
-        i+=1
+    j-=1
+    i+=1
 count+=1
 
 print(count)
