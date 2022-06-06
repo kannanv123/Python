@@ -1,11 +1,13 @@
-from collections import Counter
-words = ["ccat","bt","hat","tree"]
-chars = "atach"
+words = ["hello","world","leetcode"]
+chars = "welldonehoneyr"
+
 length = 0
-for word in words:
-    if not (Counter(word) - Counter (chars)):
-            print(word)
+for i in words:
+ for j in i:
+   if j not in chars:
+     break
+ else:
+  length+=len(i)
+
 print(length)
-
-
-    
+~               
