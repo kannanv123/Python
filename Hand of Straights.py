@@ -1,19 +1,14 @@
 hand = [1,2,3,6,2,3,4,7,8]
 w = 3
+j= 0
+list2 = []
+if len(hand)%3 != 0:
+ print("can't be formed")
 
-if (len(hand)%w != 0):
-    print("False")
-i = 0
-key = hand[i]
-while (i < len(hand)-1):
-    if (key > hand[i+1]):
-        key = hand[i]
-        while key > hand[i+1]:
-            hand[i] = hand[i+1]
-            i+=1
-        hand[i] = key
+else:
+ while (j < len(hand)):
+  list1 = hand[j:j+w]
+  j =j+w
+  list2.append(list1)
 
-    else:
-       key = hand[i+1] 
-       i+=1 
-print(hand)
+print(list2)
